@@ -12,15 +12,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.lang.*;
 import java.util.List;
 
-/**
- * Created by Patrik Melander
- * Date: 2021-03-28
- * Time: 10:24
- * Project: ProgrammingTestExpleo
- * Copyright: MIT
- */
-
-
 public class FindLinks {
     public static void main(String[] args) {
         String key = "webdriver.chrome.driver";

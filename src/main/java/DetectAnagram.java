@@ -9,6 +9,7 @@ import java.util.Arrays;
  */
 public class DetectAnagram {
 
+    //Brist, jag kollar inte från början om de är samma!
     public static boolean detectAnagram(String input1, String input2){
         //Börjar med att kolla om båda input1 och input2 är lika stora
         if (input1.length()==input2.length()){

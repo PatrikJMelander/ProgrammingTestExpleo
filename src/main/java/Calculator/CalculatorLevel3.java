@@ -41,13 +41,13 @@ public class CalculatorLevel3 {
                     operands.set(i, (operands.get(i) * operands.get(i + 1)));
                     operands.remove(i + 1);
                     i -= 1;
-                    System.out.println(operands.toString());
+                    //System.out.println(operands.toString());
                 } else if (operators.get(i).equals("/")) {
                     operators.remove(i);
                     operands.set(i, (operands.get(i) / operands.get(i + 1)));
                     operands.remove(i + 1);
                     i -= 1;
-                    System.out.println(operands.toString());
+                    //System.out.println(operands.toString());
                 }
             }
             for (int i = 0; i < operators.size(); i++) {

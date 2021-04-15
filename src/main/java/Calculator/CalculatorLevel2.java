@@ -14,7 +14,7 @@ public class CalculatorLevel2 {
             String value = input.trim();
 
             //Skapar Arrayer för både operander och operatorer
-            String[] operators = value.split("[0-9]+");
+            String[] operators = value.split("[0-9]+"); //+ tecknet gör att den läser in 30 istället för 3,0
             String[] operands = value.split("[-+*/]");
 
             for (int i = 0; i < operands.length; i++) {
@@ -25,7 +25,7 @@ public class CalculatorLevel2 {
             }
 
             double result = Integer.parseInt(operands[0]);
-            for (int i = 1; i < operands.length; i++) {
+            for (int i = 1; i < operands.length; i++) { //Börjar på 1 eftersom index 0 är tomt
                 switch (operators[i]) {
                     case "+" -> result += Double.parseDouble(operands[i]);
                     case "-" -> result -= Double.parseDouble(operands[i]);
